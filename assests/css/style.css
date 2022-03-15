@@ -5,12 +5,49 @@
 
 :root {
   --primary_clr: #eee;
-  --secondary-clr_H: 264;
-  --secondary-clr_S: 39%;
-  --secondary-clr_l: 51%;
+  --secondary-clr_H: 3;
+  --secondary-clr_S: 100%;
+  --secondary-clr_l: 45%;
 }
 
 body {
   font-family: "Montserrat-R", serif;
   background-color: var(--primary_clr);
 }
+
+/*---------------------------------------- header start */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../img/beach_glasses.jpg) no-repeat center center/cover;
+}
+/* navbar start */
+/* navbar end */
+
+/* banner start */
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75.5%;
+}
+.banner-heading {
+  animation: slide_left 2s;
+}
+.banner-para {
+  animation: slide_left 2s 0.5s backwards;
+}
+@keyframes slide_left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* banner end */
+
+/*----------------------------------------- header start */
