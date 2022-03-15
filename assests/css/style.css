@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Montserrat-R;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+:root {
+  --primary_clr: #eee;
+  --secondary-clr_H: 264;
+  --secondary-clr_S: 39%;
+  --secondary-clr_l: 51%;
+}
+
+body {
+  font-family: "Montserrat-R", serif;
+  background-color: var(--primary_clr);
+}
