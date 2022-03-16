@@ -5,9 +5,9 @@
 
 :root {
   --primary_clr: #eee;
-  --secondary-clr_H: 3;
-  --secondary-clr_S: 100%;
-  --secondary-clr_l: 45%;
+  --secondary-clr_H: 354;
+  --secondary-clr_S: 70%;
+  --secondary-clr_l: 54%;
 }
 
 body {
@@ -18,10 +18,60 @@ body {
 /*---------------------------------------- header start */
 header {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(../img/beach_glasses.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../img/hero-bg.jpg) no-repeat center center/cover;
 }
 /* navbar start */
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  padding: 20px;
+  transition: all 0.7s;
+}
+
+.menu-item {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color 0.5s;
+}
+.menu-item:hover {
+  color: hsl(
+    var(--secondary-clr_H),
+    var(--secondary-clr_S),
+    var(--secondary-clr_l)
+  );
+}
+
+.custom-navbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  padding: 5px 10px;
+}
+
+.nav-active {
+  color: hsl(
+    var(--secondary-clr_H),
+    var(--secondary-clr_S),
+    var(--secondary-clr_l)
+  );
+}
 /* navbar end */
 
 /* banner start */
@@ -30,7 +80,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75.5%;
+  width: 85.5%;
 }
 .banner-heading {
   animation: slide_left 2s;
