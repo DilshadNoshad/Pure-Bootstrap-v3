@@ -8,6 +8,7 @@
   --secondary-clr_H: 354;
   --secondary-clr_S: 70%;
   --secondary-clr_l: 54%;
+  --secondary-main-clr: #1f1f24;
 }
 
 body {
@@ -101,3 +102,42 @@ header {
 /* banner end */
 
 /*----------------------------------------- header start */
+/*----------------------------------------- mission start */
+.mission {
+  background-color: var(--secondary-main-clr);
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #eee;
+  margin: 0 auto;
+}
+.slide_from_left {
+  animation: slide_from_left 3s;
+}
+
+.slide_from_right {
+  animation: slide_from_right 3s;
+}
+@keyframes slide_from_left {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_from_right {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*----------------------------------------- mission end */
