@@ -141,3 +141,23 @@ header {
   }
 }
 /*----------------------------------------- mission end */
+/*----------------------------------------- collection start */
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+.card_heading {
+  position: absolute;
+  top: 60.5%;
+  right: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 70%;
+  background-color: #1f1f24;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.card_heading:hover {
+  opacity: 1;
+}
+/*----------------------------------------- collection end */
