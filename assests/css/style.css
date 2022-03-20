@@ -170,12 +170,25 @@ header {
 }
 
 .gallery-list-item {
+  color: #1f1f24;
+  user-select: none;
+  cursor: pointer;
+}
+
+.active-gallery {
   color: hsl(
     var(--secondary-clr_H),
     var(--secondary-clr_S),
     var(--secondary-clr_l)
   );
-  user-select: none;
-  cursor: pointer;
+}
+
+.bg-custom-grey {
+  background-color: #f2f2f2;
 }
 /*----------------------------------------- gallery end */
+/*----------------------------------------- customers start*/
+.customer {
+  background-color: var(--secondary-main-clr);
+}
+/*----------------------------------------- customers end */
