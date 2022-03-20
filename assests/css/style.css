@@ -191,4 +191,8 @@ header {
 .customer {
   background-color: var(--secondary-main-clr);
 }
+.rounded-custom {
+  clip-path: circle();
+}
+
 /*----------------------------------------- customers end */
