@@ -41,4 +41,17 @@ $(document).ready(function () {
   $(".gallery-list-item").click(function () {
     $(this).addClass("active-gallery").siblings().removeClass("active-gallery");
   });
+
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
+    if (position >= 4000) {
+      $(".card-1").addClass("movefromleft");
+      $(".card-2").addClass("movefrombottom");
+      $(".card-3").addClass("movefromright");
+    } else {
+      $(".card-1").removeClass("movefromleft");
+      $(".card-2").removeClass("movefrombottom");
+      $(".card-3").removeClass("movefromright");
+    }
+  });
 });

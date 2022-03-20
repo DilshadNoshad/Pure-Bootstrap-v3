@@ -197,3 +197,80 @@ header {
 }
 
 /*----------------------------------------- customers end */
+/*----------------------------------------- pricing card start */
+.card-1,
+.card-2,
+.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(../img/card-cover.jpg) no-repeat center center/cover;
+  box-shadow: 8px 18px 48px #555;
+  max-width: 400px;
+  /* transition: all 2s; */
+}
+
+.card-list-item:not(:last-child) {
+  border-bottom: 1px groove #eee;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.price-card-btn {
+  background-color: hsl(
+    var(--secondary-clr_H),
+    var(--secondary-clr_S),
+    var(--secondary-clr_l)
+  );
+
+  border-radius: 25px;
+  width: 120px;
+  box-shadow: 5px 8px 18px #000;
+  transition: all 0.2s;
+}
+.price-card-btn:hover {
+  --secondary-clr_l: 58%;
+  transform: translateY(-2px);
+}
+
+.movefromleft {
+  animation: movefromleft;
+  animation-duration: 2s;
+}
+.movefromright {
+  animation: movefromright;
+  animation-duration: 2s;
+}
+.movefrombottom {
+  animation: movefrombottom;
+  animation-duration: 2s;
+}
+@keyframes movefromleft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes movefromright {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes movefrombottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*----------------------------------------- pricing card end */
