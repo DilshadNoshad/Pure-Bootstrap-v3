@@ -53,7 +53,8 @@ header {
   color: #eee;
   transition: color 0.5s;
 }
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:focus {
   color: hsl(
     var(--secondary-clr_H),
     var(--secondary-clr_S),
