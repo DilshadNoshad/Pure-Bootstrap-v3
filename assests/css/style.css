@@ -344,3 +344,18 @@ header {
 }
 
 /*----------------------------------------- contact end */
+/*----------------------------------------- footer start */
+
+.footer-link {
+  color: #eee;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: hsl(
+    var(--secondary-clr_H),
+    var(--secondary-clr_S),
+    var(--secondary-clr_l)
+  );
+}
+/*----------------------------------------- footer end */

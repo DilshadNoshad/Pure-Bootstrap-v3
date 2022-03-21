@@ -44,7 +44,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     let position = $(this).scrollTop();
-    if (position >= 4000) {
+    if (position >= 3900) {
       $(".card-1").addClass("movefromleft");
       $(".card-2").addClass("movefrombottom");
       $(".card-3").addClass("movefromright");
