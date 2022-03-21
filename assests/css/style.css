@@ -274,3 +274,73 @@ header {
   }
 }
 /*----------------------------------------- pricing card end */
+/*----------------------------------------- contact start */
+
+.contact {
+  background: linear-gradient(
+      105deg,
+      rgba(21, 31, 32, 1) 0%,
+      rgba(21, 31, 32, 0.95) 50%,
+      transparent 50%
+    ),
+    url(../img/contact-cover.jpg) no-repeat center center/cover;
+}
+
+.input {
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  transition: all 0.8s;
+}
+
+.input:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  border-bottom: 2px solid
+    hsl(var(--secondary-clr_H), var(--secondary-clr_S), var(--secondary-clr_l));
+}
+
+.submit-btn {
+  color: #eee;
+  background-color: hsl(
+    var(--secondary-clr_H),
+    var(--secondary-clr_S),
+    var(--secondary-clr_l)
+  );
+  transition: all 0.3s;
+}
+.submit-btn:hover {
+  color: #eee;
+  --secondary-clr_l: 58%;
+  transform: translateY(-2px);
+}
+
+.label {
+  display: block;
+  color: #eee;
+  margin-top: -60px;
+  margin-left: 4px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.input:placeholder-shown + .label {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(20px, 20px);
+}
+
+@media (max-width: 922px) {
+  .contact {
+    background: linear-gradient(rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, 0.95));
+  }
+  .contact-form {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/*----------------------------------------- contact end */
